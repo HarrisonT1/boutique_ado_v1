@@ -36,6 +36,13 @@ body {
 .btn-black {
     background: black;
     color: white;
+    border: 1px solid black;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
 }
 
 .shop-now-button:hover,
