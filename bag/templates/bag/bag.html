@@ -25,6 +25,11 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
+                    {{ bag_items }}
+                    <br>
+                    <br>
+                    <br>
+                    {{ request.session.bag }}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
                             <tr>
@@ -33,7 +38,6 @@
                                 <th scope="col">Price</th>
                                 <th scope="col">Qty</th>
                                 <th scope="col">Subtotal</th>
-
                                 {% for item in bag_items %}
                                     <tr>
                                         <td class="p-3 w-25">
