@@ -89,7 +89,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # logs email requests to console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # logs email requests to console
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -157,3 +157,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
