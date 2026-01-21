@@ -218,7 +218,7 @@ if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # logs email requests to console
     DEFAULT_FROM_EMAIL = 'boutiqeado@example.com'
 else:
-    EMAIL_BACKEND = 'django.core.mail.backends.stmp.EmailBackend'
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
